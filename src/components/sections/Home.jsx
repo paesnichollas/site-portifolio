@@ -1,7 +1,7 @@
 import { GraduationCap, MapPin, Languages, Code, Heart, Users, Zap } from 'lucide-react';
 import { useTranslation } from '../../hooks/useTranslation';
 
-const About = () => {
+const Home = () => {
   const { t } = useTranslation();
 
   const technicalSkills = [
@@ -115,3 +115,4 @@ const About = () => {
     </section>
   );
 };
+export default Home;
