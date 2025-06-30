@@ -113,7 +113,7 @@ export const translations = {
         note: '* Este formulário será implementado em uma versão futura. Por enquanto, use os contatos diretos acima.'
       },
       footer: {
-        copyright: '© 2024 Nichollas Rocha de Araújo Paes. Todos os direitos reservados.',
+        copyright: '© 2025 Nichollas Rocha de Araújo Paes. Todos os direitos reservados.',
         madeWith: 'Desenvolvido com ❤️ usando React.js e Tailwind CSS'
       }
     }
@@ -233,7 +233,7 @@ export const translations = {
         note: '* This form will be implemented in a future version. For now, use the direct contacts above.'
       },
       footer: {
-        copyright: '© 2024 Nichollas Rocha de Araújo Paes. All rights reserved.',
+        copyright: '© 2025 Nichollas Rocha de Araújo Paes. All rights reserved.',
         madeWith: 'Made with ❤️ using React.js and Tailwind CSS'
       }
     }
