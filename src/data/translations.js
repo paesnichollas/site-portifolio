@@ -132,7 +132,7 @@ export const translations = {
     home: {
       greeting: 'Hello, I am',
       name: 'Nichollas',
-      role: 'Backend & Fullstack Developer',
+      role: 'Fullstack Developer & Sofware Engineer',
       description: 'Python/Django specialist, creating robust and scalable solutions to transform ideas into digital reality.',
       viewProjects: 'View Projects',
       getInTouch: 'Get In Touch'
