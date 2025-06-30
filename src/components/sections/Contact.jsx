@@ -37,16 +37,15 @@ const Contact = () => {
   ];
 
   const handleDownloadCV = () => {
-    const lang = localStorage.getItem('lang') || 'pt'; // ou o método que você usa para definir o idioma
+    const lang = localStorage.getItem('lang') || 'pt';
     const isEnglish = lang === 'en';
 
     const link = document.createElement("a");
     link.href = isEnglish ? "/resume.pdf" : "/curriculo.pdf";
-    link.download = isEnglish
-      ? "resume.pdf"
-      : "curriculo.pdf";
+    link.setAttribute("download", "");
     link.click();
   };
+
 
   return (
     <section className="min-h-screen py-20 bg-background">
