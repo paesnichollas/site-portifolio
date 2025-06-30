@@ -1,89 +1,117 @@
-import { ArrowDown, Github, Linkedin, Mail } from 'lucide-react';
-import { Button } from '@/components/ui/button';
+import { GraduationCap, MapPin, Languages, Code, Heart, Users, Zap } from 'lucide-react';
 import { useTranslation } from '../../hooks/useTranslation';
 
-const Home = ({ onSectionChange }) => {
+const About = () => {
   const { t } = useTranslation();
 
+  const technicalSkills = [
+    'Python', 'Django', 'PostgreSQL', 'Docker', 'DevOps', 'REST APIs',
+    'Git', 'Linux', 'JavaScript', 'React', 'HTML/CSS'
+  ];
+
+  const softSkills = [
+    { name: t('about.softSkillsList.communication'), icon: Users },
+    { name: t('about.softSkillsList.adaptability'), icon: Zap },
+    { name: t('about.softSkillsList.empathy'), icon: Heart },
+    { name: t('about.softSkillsList.proactivity'), icon: Code },
+  ];
+
   return (
-    <section className="min-h-screen flex items-center justify-center bg-gradient-to-br from-background to-muted/20">
-      <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-        <div className="space-y-8">
-          {/* Greeting */}
-          <div className="space-y-4">
-            <h1 className="text-4xl sm:text-6xl lg:text-7xl font-bold text-foreground">
-              {t('home.greeting')}{' '}
-              <span className="bg-gradient-to-r from-primary to-primary/80 bg-clip-text text-transparent">
-                {t('home.name')}
-              </span>
-            </h1>
-            <h2 className="text-xl sm:text-2xl lg:text-3xl text-muted-foreground font-light">
-              {t('home.role')}
-            </h2>
-            <p className="text-lg sm:text-xl text-muted-foreground max-w-2xl mx-auto">
-              {t('home.description')}
-            </p>
+    <section className="min-h-screen py-20 bg-background">
+      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="text-center mb-16">
+          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-foreground mb-4">
+            {t('about.title')}
+          </h2>
+          <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+            {t('about.subtitle')}
+          </p>
+        </div>
+
+        <div className="grid lg:grid-cols-2 gap-12 items-start">
+          {/* Bio Section */}
+          <div className="space-y-8">
+            <div className="prose prose-lg dark:prose-invert max-w-none">
+              <p className="text-muted-foreground leading-relaxed">
+                {t('about.bio1')}
+              </p>
+              <p className="text-muted-foreground leading-relaxed">
+                {t('about.bio2')}
+              </p>
+            </div>
+
+            {/* Personal Info */}
+            <div className="grid sm:grid-cols-2 gap-6">
+              <div className="flex items-center gap-3 p-4 rounded-lg bg-muted/50">
+                <GraduationCap className="text-primary" size={24} />
+                <div>
+                  <h3 className="font-semibold text-foreground">{t('about.education')}</h3>
+                  <p className="text-sm text-muted-foreground">{t('about.educationValue')}</p>
+                </div>
+              </div>
+              <div className="flex items-center gap-3 p-4 rounded-lg bg-muted/50">
+                <MapPin className="text-primary" size={24} />
+                <div>
+                  <h3 className="font-semibold text-foreground">{t('about.location')}</h3>
+                  <p className="text-sm text-muted-foreground">{t('about.locationValue')}</p>
+                </div>
+              </div>
+              <div className="flex items-center gap-3 p-4 rounded-lg bg-muted/50 sm:col-span-2">
+                <Languages className="text-primary" size={24} />
+                <div>
+                  <h3 className="font-semibold text-foreground">{t('about.languages')}</h3>
+                  <p className="text-sm text-muted-foreground">{t('about.languagesValue')}</p>
+                </div>
+              </div>
+            </div>
           </div>
 
-          {/* Social Links */}
-          <div className="flex justify-center space-x-6">
-            <a
-              href="https://github.com/paesnichollas"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="p-3 rounded-full bg-muted hover:bg-accent transition-colors duration-200"
-            >
-              <Github size={24} className="text-foreground" />
-            </a>
-            <a
-              href="https://www.linkedin.com/in/nichollas-rocha-de-ara%C3%BAjo-paes-a84a441a3/?trk=opento_sprofile_details"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="p-3 rounded-full bg-muted hover:bg-accent transition-colors duration-200"
-            >
-              <Linkedin size={24} className="text-foreground" />
-            </a>
-            <a
-              href="mailto:paesnichollas@gmail.com"
-              className="p-3 rounded-full bg-muted hover:bg-accent transition-colors duration-200"
-            >
-              <Mail size={24} className="text-foreground" />
-            </a>
-          </div>
+          {/* Skills Section */}
+          <div className="space-y-8">
+            {/* Technical Skills */}
+            <div>
+              <h3 className="text-2xl font-bold text-foreground mb-6">{t('about.technicalSkills')}</h3>
+              <div className="flex flex-wrap gap-3">
+                {technicalSkills.map((skill, index) => (
+                  <span
+                    key={index}
+                    className="px-4 py-2 bg-primary/10 text-primary rounded-full text-sm font-medium border border-primary/20 hover:bg-primary/20 transition-colors duration-200"
+                  >
+                    {skill}
+                  </span>
+                ))}
+              </div>
+            </div>
 
-          {/* CTA Buttons */}
-          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-            <Button
-              onClick={() => onSectionChange('projects')}
-              size="lg"
-              className="px-8 py-3 text-lg"
-            >
-              {t('home.viewProjects')}
-            </Button>
-            <Button
-              onClick={() => onSectionChange('contact')}
-              variant="outline"
-              size="lg"
-              className="px-8 py-3 text-lg"
-            >
-              {t('home.getInTouch')}
-            </Button>
-          </div>
+            {/* Soft Skills */}
+            <div>
+              <h3 className="text-2xl font-bold text-foreground mb-6">{t('about.softSkills')}</h3>
+              <div className="grid grid-cols-2 gap-4">
+                {softSkills.map((skill, index) => {
+                  const Icon = skill.icon;
+                  return (
+                    <div
+                      key={index}
+                      className="flex items-center gap-3 p-4 rounded-lg bg-muted/50 hover:bg-muted transition-colors duration-200"
+                    >
+                      <Icon className="text-primary" size={20} />
+                      <span className="font-medium text-foreground">{skill.name}</span>
+                    </div>
+                  );
+                })}
+              </div>
+            </div>
 
-          {/* Scroll Indicator */}
-          <div className="flex justify-center pt-8">
-            <button
-              onClick={() => onSectionChange('about')}
-              className="animate-bounce p-2 rounded-full hover:bg-accent transition-colors duration-200"
-            >
-              <ArrowDown size={24} className="text-muted-foreground" />
-            </button>
+            {/* Quote */}
+            <div className="p-6 rounded-lg bg-gradient-to-r from-primary/10 to-primary/5 border border-primary/20">
+              <blockquote className="text-foreground italic text-lg">
+                {t('about.quote')}
+              </blockquote>
+              <cite className="text-muted-foreground text-sm mt-2 block">{t('about.quoteAuthor')}</cite>
+            </div>
           </div>
         </div>
       </div>
     </section>
   );
 };
-
-export default Home;
-
