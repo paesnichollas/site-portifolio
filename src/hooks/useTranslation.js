@@ -19,6 +19,6 @@ export const useTranslation = () => {
     return value || key;
   };
   
-  return { t };
+  return { t, language };
 };
 

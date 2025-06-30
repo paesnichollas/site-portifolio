@@ -3,7 +3,7 @@ import { Button } from '@/components/ui/button';
 import { useTranslation } from '../../hooks/useTranslation';
 
 const Contact = () => {
-  const { t } = useTranslation();
+  const { t, language } = useTranslation();
 
   const contactMethods = [
     {
@@ -37,31 +37,37 @@ const Contact = () => {
   ];
 
   const handleDownloadCV = async () => {
-    const lang = localStorage.getItem('lang') || 'pt';
+    const lang = language || 'pt'; 
     const isEnglish = lang === 'en';
 
     const url = isEnglish ? '/resume.pdf' : '/curriculo.pdf';
-    const filename = isEnglish ? 'Resume_Nichollas_EN.pdf' : 'Curriculo_Nichollas_PT-BR.pdf';
+    const filename = isEnglish
+      ? 'Resume.pdf'
+      : 'Curriculo.pdf';
+
+    console.log('Idioma detectado:', lang);
+    console.log('Arquivo sendo baixado:', url);
+    console.log('Nome do arquivo:', filename);
 
     try {
       const response = await fetch(url);
-      if (!response.ok) throw new Error('Erro ao baixar o arquivo');
+      if (!response.ok) throw new Error('Erro ao buscar o PDF');
 
       const blob = await response.blob();
       const blobUrl = window.URL.createObjectURL(blob);
 
-      const link = document.createElement('a');
-      link.href = blobUrl;
-      link.download = filename;
-      link.click();
-
+      const a = document.createElement('a');
+      a.href = blobUrl;
+      a.download = filename;
+      document.body.appendChild(a);
+      a.click();
+      a.remove();
       window.URL.revokeObjectURL(blobUrl);
     } catch (error) {
-      alert('Não foi possível baixar o currículo.');
+      alert('Erro ao tentar baixar o currículo.');
       console.error(error);
     }
   };
-
 
   return (
     <section className="min-h-screen py-20 bg-background">
