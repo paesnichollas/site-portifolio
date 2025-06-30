@@ -37,7 +37,15 @@ const Contact = () => {
   ];
 
   const handleDownloadCV = () => {
-    alert("Funcionalidade de download do CV será implementada em breve!");
+    const lang = localStorage.getItem('lang') || 'pt'; // ou o método que você usa para definir o idioma
+    const isEnglish = lang === 'en';
+
+    const link = document.createElement("a");
+    link.href = isEnglish ? "/resume.pdf" : "/curriculo.pdf";
+    link.download = isEnglish
+      ? "resume.pdf"
+      : "curriculo.pdf";
+    link.click();
   };
 
   return (
