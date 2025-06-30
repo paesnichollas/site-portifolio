@@ -13,7 +13,7 @@ const Home = ({ onSectionChange }) => {
           <div className="space-y-4">
             <h1 className="text-4xl sm:text-6xl lg:text-7xl font-bold text-foreground">
               {t('home.greeting')}{' '}
-              <span className="text-primary bg-gradient-to-r from-primary to-primary/80 bg-clip-text text-transparent">
+              <span className="text-primary bg-gradient-to-r from-primary to-primary/80 bg-clip-text">
                 {t('home.name')}
               </span>
             </h1>
