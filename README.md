@@ -69,22 +69,26 @@ portfolio-nichollas/
 ### Instalação
 
 1. **Clone o repositório**
+
    ```bash
    git clone https://github.com/paesnichollas/portfolio-nichollas.git
    cd portfolio-nichollas
    ```
 
 2. **Instale as dependências**
+
    ```bash
    pnpm install
    ```
 
 3. **Execute o servidor de desenvolvimento**
+
    ```bash
    pnpm run dev
    ```
 
 4. **Acesse no navegador**
+
    ```
    http://localhost:5173
    ```
@@ -103,6 +107,7 @@ Para adicionar um novo projeto ao portfólio, siga estes passos:
 ### 1. Adicione a imagem do projeto
 
 Coloque a imagem na pasta `src/assets/` com um nome descritivo:
+
 ```bash
 src/assets/meu-novo-projeto.png
 ```
@@ -110,6 +115,7 @@ src/assets/meu-novo-projeto.png
 ### 2. Importe a imagem no componente Projects
 
 No arquivo `src/components/sections/Projects.jsx`, adicione o import:
+
 ```javascript
 import meuNovoProjeto from '../../assets/meu-novo-projeto.png';
 ```
@@ -117,6 +123,7 @@ import meuNovoProjeto from '../../assets/meu-novo-projeto.png';
 ### 3. Adicione o projeto ao array
 
 No mesmo arquivo, adicione um novo objeto ao array `projects`:
+
 ```javascript
 {
   id: 4, // Próximo ID disponível
@@ -133,6 +140,7 @@ No mesmo arquivo, adicione um novo objeto ao array `projects`:
 ### 4. Adicione as traduções (opcional)
 
 Se quiser suporte bilíngue, adicione as traduções em `src/data/translations.js`:
+
 ```javascript
 // Em translations.pt
 projectsList: {
@@ -156,6 +164,7 @@ projectsList: {
 ### 5. Use as traduções no componente
 
 Se adicionou traduções, substitua os textos fixos:
+
 ```javascript
 title: t('projects.projectsList.meuNovoProjeto.title'),
 description: t('projects.projectsList.meuNovoProjeto.description'),
@@ -166,12 +175,14 @@ description: t('projects.projectsList.meuNovoProjeto.description'),
 ### GitHub Pages
 
 1. **Configure o repositório**
+
    ```bash
    # Adicione o repositório remoto
    git remote add origin https://github.com/paesnichollas/portfolio-nichollas.git
    ```
 
 2. **Configure o vite.config.js**
+
    ```javascript
    export default defineConfig({
      base: '/portfolio-nichollas/', // Nome do repositório
@@ -180,11 +191,13 @@ description: t('projects.projectsList.meuNovoProjeto.description'),
    ```
 
 3. **Instale gh-pages**
+
    ```bash
    pnpm add -D gh-pages
    ```
 
 4. **Adicione scripts no package.json**
+
    ```json
    {
      "scripts": {
@@ -195,6 +208,7 @@ description: t('projects.projectsList.meuNovoProjeto.description'),
    ```
 
 5. **Faça o deploy**
+
    ```bash
    pnpm run deploy
    ```
@@ -215,6 +229,7 @@ description: t('projects.projectsList.meuNovoProjeto.description'),
 ### Cores e Tema
 
 As cores são definidas no arquivo `src/App.css` usando CSS custom properties:
+
 ```css
 :root {
   --primary: oklch(0.205 0 0);
@@ -232,6 +247,7 @@ As cores são definidas no arquivo `src/App.css` usando CSS custom properties:
 ### Informações Pessoais
 
 Atualize as informações pessoais nos seguintes arquivos:
+
 - `src/data/translations.js` - Textos e traduções
 - `src/components/sections/About.jsx` - Skills e informações técnicas
 - `src/components/sections/Contact.jsx` - Links de contato
@@ -258,9 +274,10 @@ Este projeto está sob a licença MIT. Veja o arquivo [LICENSE](LICENSE) para ma
 ## 👨‍💻 Autor
 
 **Nichollas Rocha de Araújo Paes**
+
 - GitHub: [@paesnichollas](https://github.com/paesnichollas)
 - LinkedIn: [Nichollas Rocha](https://www.linkedin.com/in/nichollas-rocha-de-ara%C3%BAjo-paes-a84a441a3/?trk=opento_sprofile_details)
-- Email: paesnichollas@gmail.com
+- Email: <paesnichollas@gmail.com>
 
 ## 🙏 Agradecimentos
 
@@ -273,4 +290,3 @@ Este projeto está sob a licença MIT. Veja o arquivo [LICENSE](LICENSE) para ma
 ---
 
 ⭐ Se este projeto te ajudou, considere dar uma estrela no repositório!
-

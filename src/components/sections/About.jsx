@@ -33,8 +33,8 @@ const About = () => {
           <div className="space-y-8">
             <div className="prose prose-lg dark:prose-invert max-w-none">
               <p className="text-muted-foreground leading-relaxed">
-                Sou um desenvolvedor apaixonado por tecnologia e inovação, com foco em 
-                desenvolvimento backend e fullstack. Minha jornada na programação começou 
+                Sou um desenvolvedor e engenheiro de software apaixonado por tecnologia e inovação, com foco em 
+                desenvolvimento fullstack. Minha jornada na programação começou 
                 durante a graduação em Ciência da Computação, onde descobri o poder de 
                 transformar ideias em soluções digitais.
               </p>
