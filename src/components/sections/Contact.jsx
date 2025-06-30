@@ -36,16 +36,31 @@ const Contact = () => {
     }
   ];
 
-  const handleDownloadCV = () => {
+  const handleDownloadCV = async () => {
     const lang = localStorage.getItem('lang') || 'pt';
     const isEnglish = lang === 'en';
 
-    const link = document.createElement("a");
-    link.href = isEnglish ? "/resume.pdf" : "/curriculo.pdf";
-    link.setAttribute("download", ""); // força download com o nome do arquivo
-    link.click();
-  };
+    const url = isEnglish ? '/resume.pdf' : '/curriculo.pdf';
+    const filename = isEnglish ? 'Resume_Nichollas_EN.pdf' : 'Curriculo_Nichollas_PT-BR.pdf';
 
+    try {
+      const response = await fetch(url);
+      if (!response.ok) throw new Error('Erro ao baixar o arquivo');
+
+      const blob = await response.blob();
+      const blobUrl = window.URL.createObjectURL(blob);
+
+      const link = document.createElement('a');
+      link.href = blobUrl;
+      link.download = filename;
+      link.click();
+
+      window.URL.revokeObjectURL(blobUrl);
+    } catch (error) {
+      alert('Não foi possível baixar o currículo.');
+      console.error(error);
+    }
+  };
 
 
   return (
