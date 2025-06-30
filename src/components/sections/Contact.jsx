@@ -42,9 +42,10 @@ const Contact = () => {
 
     const link = document.createElement("a");
     link.href = isEnglish ? "/resume.pdf" : "/curriculo.pdf";
-    link.setAttribute("download", "");
+    link.setAttribute("download", ""); // força download com o nome do arquivo
     link.click();
   };
+
 
 
   return (
