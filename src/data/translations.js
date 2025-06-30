@@ -13,7 +13,7 @@ export const translations = {
       greeting: 'Olá, eu sou o',
       name: 'Nichollas',
       role: 'Desenvolvedor Fullstack & Engenheiro de Software',
-      description: 'Especialista em Python/Django, criando soluções robustas e escaláveis para transformar ideias em realidade digital.',
+      description: 'Entusiasta de Python/Django, criando soluções para transformar ideias em realidade digital.',
       viewProjects: 'Ver Projetos',
       getInTouch: 'Entre em Contato'
     },
@@ -22,8 +22,8 @@ export const translations = {
     about: {
       title: 'Sobre Mim',
       subtitle: 'Conheça um pouco mais sobre minha jornada e experiência',
-      bio1: 'Sou um desenvolvedor apaixonado por tecnologia e inovação, com foco em desenvolvimento backend e fullstack. Minha jornada na programação começou durante a graduação em Ciência da Computação, onde descobri o poder de transformar ideias em soluções digitais.',
-      bio2: 'Especializo-me em Python e Django, criando aplicações robustas e escaláveis. Tenho experiência em arquitetura de sistemas, bancos de dados, DevOps e desenvolvimento de APIs RESTful. Sempre busco as melhores práticas e tecnologias mais atuais para entregar soluções de qualidade.',
+      bio1: 'Sou um desenvolvedor apaixonado por tecnologia e inovação, com foco em desenvolvimento fullstack e engenharia de software. Minha jornada na programação começou durante a graduação em Ciência da Computação, onde descobri o poder de transformar ideias em soluções digitais.',
+      bio2: 'Especializo-me em Python e Django, criando desde aplicações simples até robustas e escaláveis. Tenho experiência em arquitetura de sistemas, bancos de dados e desenvolvimento de APIs. Sempre busco as melhores práticas e tecnologias mais atuais para entregar soluções de qualidade.',
       education: 'Formação',
       educationValue: 'Bacharel em Ciência da Computação - UNIMA',
       location: 'Localização',
@@ -125,7 +125,7 @@ export const translations = {
       greeting: 'Hello, I am',
       name: 'Nichollas',
       role: 'Fullstack Developer & Sofware Engineer',
-      description: 'Python/Django specialist, creating robust and scalable solutions to transform ideas into digital reality.',
+      description: 'Python/Django enthusiast, creating solutions to transform ideas into digital reality.',
       viewProjects: 'View Projects',
       getInTouch: 'Get In Touch'
     },
@@ -134,8 +134,8 @@ export const translations = {
     about: {
       title: 'About Me',
       subtitle: 'Learn a little more about my journey and experience',
-      bio1: 'I am a developer passionate about technology and innovation, focused on backend and fullstack development. My programming journey began during my Computer Science degree, where I discovered the power of transforming ideas into digital solutions.',
-      bio2: 'I specialize in Python and Django, creating robust and scalable applications. I have experience in system architecture, databases, DevOps, and RESTful API development. I always seek best practices and the latest technologies to deliver quality solutions.',
+      bio1: 'I’m a developer passionate about technology and innovation, focused on fullstack development and software engineering. My journey in programming began during my Computer Science degree, where I discovered the power of turning ideas into digital solutions.',
+      bio2: 'I specialize in Python and Django, building everything from simple applications to robust and scalable systems. I have experience in system architecture, databases, and API development. I’m always looking for best practices and the latest technologies to deliver high-quality solutions.',
       education: 'Education',
       educationValue: 'Bachelor in Computer Science - UNIMA',
       location: 'Location',
