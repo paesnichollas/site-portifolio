@@ -3,9 +3,9 @@ import { useTranslation } from '../../hooks/useTranslation';
 
 const About = () => {
   const { t } = useTranslation();
-  
+
   const technicalSkills = [
-    'Python', 'Django', 'PostgreSQL', 'Docker', 'DevOps', 'REST APIs', 
+    'Python', 'Django', 'PostgreSQL', 'Docker', 'DevOps', 'REST APIs',
     'Git', 'Linux', 'JavaScript', 'React', 'HTML/CSS'
   ];
 
@@ -33,16 +33,10 @@ const About = () => {
           <div className="space-y-8">
             <div className="prose prose-lg dark:prose-invert max-w-none">
               <p className="text-muted-foreground leading-relaxed">
-                Sou um desenvolvedor e engenheiro de software apaixonado por tecnologia e inovação, com foco em 
-                desenvolvimento fullstack. Minha jornada na programação começou 
-                durante a graduação em Ciência da Computação, onde descobri o poder de 
-                transformar ideias em soluções digitais.
+                {t('about.bio1')}
               </p>
               <p className="text-muted-foreground leading-relaxed">
-                Especializo-me em Python e Django, criando aplicações robustas e escaláveis. 
-                Tenho experiência em arquitetura de sistemas, bancos de dados, DevOps e 
-                desenvolvimento de APIs RESTful. Sempre busco as melhores práticas e 
-                tecnologias mais atuais para entregar soluções de qualidade.
+                {t('about.bio2')}
               </p>
             </div>
 
@@ -51,22 +45,22 @@ const About = () => {
               <div className="flex items-center gap-3 p-4 rounded-lg bg-muted/50">
                 <GraduationCap className="text-primary" size={24} />
                 <div>
-                  <h3 className="font-semibold text-foreground">Formação</h3>
-                  <p className="text-sm text-muted-foreground">Bacharel em Ciência da Computação - UNIMA</p>
+                  <h3 className="font-semibold text-foreground">{t('about.education')}</h3>
+                  <p className="text-sm text-muted-foreground">{t('about.educationValue')}</p>
                 </div>
               </div>
               <div className="flex items-center gap-3 p-4 rounded-lg bg-muted/50">
                 <MapPin className="text-primary" size={24} />
                 <div>
-                  <h3 className="font-semibold text-foreground">Localização</h3>
-                  <p className="text-sm text-muted-foreground">Maceió - AL, Brasil</p>
+                  <h3 className="font-semibold text-foreground">{t('about.location')}</h3>
+                  <p className="text-sm text-muted-foreground">{t('about.locationValue')}</p>
                 </div>
               </div>
               <div className="flex items-center gap-3 p-4 rounded-lg bg-muted/50 sm:col-span-2">
                 <Languages className="text-primary" size={24} />
                 <div>
-                  <h3 className="font-semibold text-foreground">Idiomas</h3>
-                  <p className="text-sm text-muted-foreground">Português (Nativo), Inglês (Avançado)</p>
+                  <h3 className="font-semibold text-foreground">{t('about.languages')}</h3>
+                  <p className="text-sm text-muted-foreground">{t('about.languagesValue')}</p>
                 </div>
               </div>
             </div>
@@ -76,7 +70,7 @@ const About = () => {
           <div className="space-y-8">
             {/* Technical Skills */}
             <div>
-              <h3 className="text-2xl font-bold text-foreground mb-6">Skills Técnicas</h3>
+              <h3 className="text-2xl font-bold text-foreground mb-6">{t('about.technicalSkills')}</h3>
               <div className="flex flex-wrap gap-3">
                 {technicalSkills.map((skill, index) => (
                   <span
@@ -91,7 +85,7 @@ const About = () => {
 
             {/* Soft Skills */}
             <div>
-              <h3 className="text-2xl font-bold text-foreground mb-6">Soft Skills</h3>
+              <h3 className="text-2xl font-bold text-foreground mb-6">{t('about.softSkills')}</h3>
               <div className="grid grid-cols-2 gap-4">
                 {softSkills.map((skill, index) => {
                   const Icon = skill.icon;
@@ -111,9 +105,9 @@ const About = () => {
             {/* Quote */}
             <div className="p-6 rounded-lg bg-gradient-to-r from-primary/10 to-primary/5 border border-primary/20">
               <blockquote className="text-foreground italic text-lg">
-                "A tecnologia é melhor quando aproxima as pessoas."
+                {t('about.quote')}
               </blockquote>
-              <cite className="text-muted-foreground text-sm mt-2 block">- Matt Mullenweg</cite>
+              <cite className="text-muted-foreground text-sm mt-2 block">{t('about.quoteAuthor')}</cite>
             </div>
           </div>
         </div>
@@ -121,6 +115,4 @@ const About = () => {
     </section>
   );
 };
-
 export default About;
-
