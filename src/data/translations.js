@@ -23,7 +23,7 @@ export const translations = {
       title: 'Sobre Mim',
       subtitle: 'Conheça um pouco mais sobre minha jornada e experiência',
       bio1: 'Sou um desenvolvedor apaixonado por tecnologia e inovação, com foco em desenvolvimento fullstack e engenharia de software. Minha jornada na programação começou durante a graduação em Ciência da Computação, onde descobri o poder de transformar ideias em soluções digitais.',
-      bio2: 'Especializo-me em Python e Django, criando desde aplicações simples até robustas e escaláveis. Tenho experiência em arquitetura de sistemas, bancos de dados e desenvolvimento de APIs. Sempre busco as melhores práticas e tecnologias mais atuais para entregar soluções de qualidade.',
+      bio2: 'Especializo-me em Python e Django, criando aplicações. Tenho experiência em arquitetura de sistemas, bancos de dados e desenvolvimento de APIs. Sempre busco as melhores práticas e tecnologias mais atuais para entregar soluções de qualidade.',
       education: 'Formação',
       educationValue: 'Bacharel em Ciência da Computação - UNIMA',
       location: 'Localização',
@@ -48,7 +48,7 @@ export const translations = {
       subtitle: 'Uma seleção dos meus trabalhos mais recentes e significativos',
       stats: {
         completed: 'Projetos Concluídos',
-        technologies: 'Tecnologias Dominadas',
+        technologies: 'Tecnologias Conhecidas',
         apis: 'APIs Desenvolvidas'
       },
       projectsList: {
@@ -135,7 +135,7 @@ export const translations = {
       title: 'About Me',
       subtitle: 'Learn a little more about my journey and experience',
       bio1: 'I’m a developer passionate about technology and innovation, focused on fullstack development and software engineering. My journey in programming began during my Computer Science degree, where I discovered the power of turning ideas into digital solutions.',
-      bio2: 'I specialize in Python and Django, building everything from simple applications to robust and scalable systems. I have experience in system architecture, databases, and API development. I’m always looking for best practices and the latest technologies to deliver high-quality solutions.',
+      bio2: 'I specialize in Python and Django, building applications. I have experience in system architecture, databases, and API development. I’m always looking for best practices and the latest technologies to deliver high-quality solutions.',
       education: 'Education',
       educationValue: 'Bachelor in Computer Science - UNIMA',
       location: 'Location',
@@ -160,7 +160,7 @@ export const translations = {
       subtitle: 'A selection of my most recent and significant work',
       stats: {
         completed: 'Completed Projects',
-        technologies: 'Mastered Technologies',
+        technologies: 'Known Technologies',
         apis: 'Developed APIs'
       },
       projectsList: {
