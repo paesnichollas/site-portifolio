@@ -10,7 +10,7 @@ export const translations = {
     
     // Home Section
     home: {
-      greeting: 'Olá, eu sou',
+      greeting: 'Olá, eu sou o',
       name: 'Nichollas',
       role: 'Desenvolvedor Fullstack & Engenheiro de Software',
       description: 'Especialista em Python/Django, criando soluções robustas e escaláveis para transformar ideias em realidade digital.',
@@ -52,17 +52,9 @@ export const translations = {
         apis: 'APIs Desenvolvidas'
       },
       projectsList: {
-        businessSystem: {
-          title: 'Sistema de Gestão Empresarial',
-          description: 'Aplicação web completa para gestão de empresas, incluindo controle de estoque, vendas, relatórios e dashboard administrativo. Desenvolvido com Django e PostgreSQL.'
-        },
-        ecommerceApi: {
-          title: 'API de E-commerce',
-          description: 'API RESTful robusta para e-commerce com autenticação JWT, processamento de pagamentos, gestão de produtos e integração com serviços externos.'
-        },
-        analyticsDashboard: {
-          title: 'Dashboard Analytics',
-          description: 'Dashboard interativo para análise de dados com gráficos dinâmicos, filtros avançados e exportação de relatórios. Interface moderna e responsiva.'
+        newLifeProject: {
+          title: 'Projeto New Life',
+          description: 'Projeto de e-commerce, focado na exposição de produtos naturais e suplementos.'
         }
       },
       featured: 'Destaque',
@@ -172,17 +164,9 @@ export const translations = {
         apis: 'Developed APIs'
       },
       projectsList: {
-        businessSystem: {
-          title: 'Business Management System',
-          description: 'Complete web application for business management, including inventory control, sales, reports and administrative dashboard. Developed with Django and PostgreSQL.'
-        },
-        ecommerceApi: {
-          title: 'E-commerce API',
-          description: 'Robust RESTful API for e-commerce with JWT authentication, payment processing, product management and external service integration.'
-        },
-        analyticsDashboard: {
-          title: 'Analytics Dashboard',
-          description: 'Interactive dashboard for data analysis with dynamic charts, advanced filters and report export. Modern and responsive interface.'
+        newLifeProject: {
+          title: 'New Life Project',
+          description: 'E-commerce project focused on showcasing natural products and supplements.'
         }
       },
       featured: 'Featured',
@@ -239,4 +223,5 @@ export const translations = {
     }
   }
 };
+
 

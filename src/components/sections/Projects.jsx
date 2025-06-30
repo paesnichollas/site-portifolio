@@ -1,9 +1,7 @@
 import { ExternalLink, Github, Code, Database, Server } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { useTranslation } from '../../hooks/useTranslation';
-import businessDashboard from '../../assets/business-dashboard.webp';
-import ecommerceApi from '../../assets/ecommerce-api.png';
-import analyticsDashboard from '../../assets/analytics-dashboard.png';
+import NewLife from '../../assets/newlife.png';
 
 const Projects = () => {
   const { t } = useTranslation();
@@ -11,34 +9,14 @@ const Projects = () => {
   const projects = [
     {
       id: 1,
-      title: t('projects.projectsList.businessSystem.title'),
-      description: t('projects.projectsList.businessSystem.description'),
-      image: businessDashboard,
-      technologies: ["Python", "Django", "PostgreSQL", "Bootstrap", "JavaScript"],
-      githubUrl: "https://github.com/paesnichollas/sistema-gestao",
-      liveUrl: "https://sistema-gestao-demo.herokuapp.com",
-      featured: true
-    },
-    {
-      id: 2,
-      title: t('projects.projectsList.ecommerceApi.title'),
-      description: t('projects.projectsList.ecommerceApi.description'),
-      image: ecommerceApi,
-      technologies: ["Python", "Django REST", "Redis", "Celery", "Docker"],
-      githubUrl: "https://github.com/paesnichollas/ecommerce-api",
+      title: "Projeto New Life",
+      description: "Projeto de e-commerce, focado na exposição de produtos naturais e suplementos.",
+      image: NewLife,
+      technologies: ["Python", "Django", "HTML", "CSS", "JavaScript"],
+      githubUrl: "https://github.com/paesnichollas/newlifeproject",
       liveUrl: null,
       featured: true
     },
-    {
-      id: 3,
-      title: t('projects.projectsList.analyticsDashboard.title'),
-      description: t('projects.projectsList.analyticsDashboard.description'),
-      image: analyticsDashboard,
-      technologies: ["React", "Python", "FastAPI", "Chart.js", "Tailwind CSS"],
-      githubUrl: "https://github.com/paesnichollas/dashboard-analytics",
-      liveUrl: "https://analytics-dashboard-demo.vercel.app",
-      featured: false
-    }
   ];
 
   const ProjectCard = ({ project }) => (
