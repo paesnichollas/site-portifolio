@@ -20,7 +20,7 @@ const Contact = () => {
     {
       icon: Linkedin,
       title: "LinkedIn",
-      value: "Nichollas Rocha",
+      value: "Nichollas Rocha de Araújo Paes",
       href: "https://www.linkedin.com/in/nichollas-rocha-de-ara%C3%BAjo-paes-a84a441a3/?trk=opento_sprofile_details",
       description: "Conecte-se comigo profissionalmente"
     },

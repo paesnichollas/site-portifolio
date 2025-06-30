@@ -27,7 +27,7 @@ const Navigation = ({ currentSection, onSectionChange }) => {
           {/* Logo */}
           <div className="flex-shrink-0">
             <h1 className="text-xl font-bold text-primary">
-              Nichollas Rocha
+              Nichollas Paes
             </h1>
           </div>
 

@@ -12,7 +12,7 @@ export const translations = {
     home: {
       greeting: 'Olá, eu sou',
       name: 'Nichollas',
-      role: 'Desenvolvedor Backend & Fullstack',
+      role: 'Desenvolvedor Fullstack & Engenheiro de Software',
       description: 'Especialista em Python/Django, criando soluções robustas e escaláveis para transformar ideias em realidade digital.',
       viewProjects: 'Ver Projetos',
       getInTouch: 'Entre em Contato'
