@@ -9,8 +9,8 @@ const Projects = () => {
   const projects = [
     {
       id: 1,
-      title: "Projeto New Life",
-      description: "Projeto de e-commerce, focado na exposição de produtos naturais e suplementos.",
+      title: t('projects.projectsList.newLifeProject.title'),
+      description: t('projects.projectsList.newLifeProject.description'),
       image: NewLife,
       technologies: ["Python", "Django", "HTML", "CSS", "JavaScript"],
       githubUrl: "https://github.com/paesnichollas/newlifeproject",
