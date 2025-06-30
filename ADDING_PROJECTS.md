@@ -11,13 +11,16 @@ O sistema de projetos foi projetado para ser facilmente extensível. Cada projet
 ### Passo 1: Preparar a Imagem do Projeto
 
 #### 1.1 Escolher a Imagem
+
 - **Formato recomendado**: PNG, WebP ou JPG
 - **Dimensões ideais**: 400x250 pixels (proporção 16:10)
 - **Tamanho máximo**: 500KB para otimizar o carregamento
 - **Qualidade**: Alta resolução, mas otimizada para web
 
 #### 1.2 Nomear o Arquivo
+
 Use um nome descritivo e sem espaços:
+
 ```
 ✅ Bom: sistema-gestao-vendas.png
 ✅ Bom: api-ecommerce-nodejs.webp
@@ -26,7 +29,9 @@ Use um nome descritivo e sem espaços:
 ```
 
 #### 1.3 Adicionar ao Projeto
+
 Coloque a imagem na pasta `src/assets/`:
+
 ```bash
 src/assets/nome-do-projeto.png
 ```
@@ -34,10 +39,13 @@ src/assets/nome-do-projeto.png
 ### Passo 2: Configurar o Projeto no Código
 
 #### 2.1 Abrir o Arquivo de Projetos
+
 Navegue até: `src/components/sections/Projects.jsx`
 
 #### 2.2 Importar a Imagem
+
 No topo do arquivo, adicione o import:
+
 ```javascript
 // Imports existentes
 import businessDashboard from '../../assets/business-dashboard.webp';
@@ -49,6 +57,7 @@ import nomeDoSeuProjeto from '../../assets/nome-do-projeto.png';
 ```
 
 #### 2.3 Adicionar o Objeto do Projeto
+
 Localize o array `projects` e adicione um novo objeto:
 
 ```javascript
@@ -74,10 +83,13 @@ const projects = [
 Se você quiser que o projeto tenha suporte bilíngue:
 
 #### 3.1 Abrir o Arquivo de Traduções
+
 Navegue até: `src/data/translations.js`
 
 #### 3.2 Adicionar Traduções em Português
+
 Localize `pt.projects.projectsList` e adicione:
+
 ```javascript
 projectsList: {
   // ... projetos existentes
@@ -90,7 +102,9 @@ projectsList: {
 ```
 
 #### 3.3 Adicionar Traduções em Inglês
+
 Localize `en.projects.projectsList` e adicione:
+
 ```javascript
 projectsList: {
   // ... projetos existentes
@@ -103,7 +117,9 @@ projectsList: {
 ```
 
 #### 3.4 Usar as Traduções no Componente
+
 Volte ao arquivo `Projects.jsx` e substitua os textos fixos:
+
 ```javascript
 {
   id: 4,
@@ -116,45 +132,53 @@ Volte ao arquivo `Projects.jsx` e substitua os textos fixos:
 ## 🎨 Propriedades Detalhadas
 
 ### `id` (obrigatório)
+
 - **Tipo**: Number
 - **Descrição**: Identificador único do projeto
 - **Exemplo**: `4`
 - **Dica**: Use sempre o próximo número disponível
 
 ### `title` (obrigatório)
+
 - **Tipo**: String
 - **Descrição**: Nome do projeto
 - **Limite**: 50 caracteres recomendado
 - **Exemplo**: `"Sistema de Gestão de Vendas"`
 
 ### `description` (obrigatório)
+
 - **Tipo**: String
 - **Descrição**: Descrição detalhada do projeto
 - **Limite**: 200-300 caracteres recomendado
 - **Exemplo**: `"Sistema completo para gestão de vendas com dashboard, relatórios e integração com APIs de pagamento."`
 
 ### `image` (obrigatório)
+
 - **Tipo**: Imported image
 - **Descrição**: Imagem de preview do projeto
 - **Exemplo**: `meuProjeto` (variável importada)
 
 ### `technologies` (obrigatório)
+
 - **Tipo**: Array de strings
 - **Descrição**: Tecnologias utilizadas no projeto
 - **Limite**: 3-6 tecnologias recomendado
 - **Exemplo**: `["React", "Node.js", "PostgreSQL", "Docker"]`
 
 ### `githubUrl` (obrigatório)
+
 - **Tipo**: String (URL)
 - **Descrição**: Link para o repositório no GitHub
 - **Exemplo**: `"https://github.com/paesnichollas/meu-projeto"`
 
 ### `liveUrl` (opcional)
+
 - **Tipo**: String (URL) ou null
 - **Descrição**: Link para o projeto em produção
 - **Exemplo**: `"https://meu-projeto.vercel.app"` ou `null`
 
 ### `featured` (opcional)
+
 - **Tipo**: Boolean
 - **Descrição**: Se o projeto deve ter destaque especial
 - **Padrão**: `false`
@@ -163,6 +187,7 @@ Volte ao arquivo `Projects.jsx` e substitua os textos fixos:
 ## 🔧 Exemplos Práticos
 
 ### Exemplo 1: Projeto Simples
+
 ```javascript
 {
   id: 5,
@@ -177,6 +202,7 @@ Volte ao arquivo `Projects.jsx` e substitua os textos fixos:
 ```
 
 ### Exemplo 2: Projeto em Destaque
+
 ```javascript
 {
   id: 6,
@@ -191,6 +217,7 @@ Volte ao arquivo `Projects.jsx` e substitua os textos fixos:
 ```
 
 ### Exemplo 3: Projeto Apenas no GitHub
+
 ```javascript
 {
   id: 7,
@@ -222,9 +249,11 @@ Antes de finalizar, verifique se:
 
 1. **Salve todos os arquivos**
 2. **Execute o projeto localmente**:
+
    ```bash
    pnpm run dev
    ```
+
 3. **Navegue até a seção "Projetos"**
 4. **Verifique se o novo projeto aparece corretamente**
 5. **Teste os links do GitHub e demo**
@@ -233,11 +262,13 @@ Antes de finalizar, verifique se:
 ## 🎯 Dicas Avançadas
 
 ### Organizando Projetos por Importância
+
 - Use `featured: true` para no máximo 2-3 projetos
 - Ordene os projetos por relevância (mais importantes primeiro)
 - Considere remover projetos muito antigos ou menos relevantes
 
 ### Otimizando Imagens
+
 ```bash
 # Usando imagemin-cli para otimizar imagens
 npm install -g imagemin-cli imagemin-webp
@@ -245,7 +276,9 @@ imagemin src/assets/*.png --out-dir=src/assets --plugin=webp
 ```
 
 ### Adicionando Métricas
+
 Considere adicionar propriedades extras como:
+
 ```javascript
 {
   // ... propriedades padrão
@@ -261,16 +294,19 @@ Considere adicionar propriedades extras como:
 ## 🆘 Solução de Problemas
 
 ### Imagem não aparece
+
 - Verifique se o caminho do import está correto
 - Confirme se a imagem está na pasta `src/assets/`
 - Verifique se o nome do arquivo não tem espaços ou caracteres especiais
 
 ### Projeto não aparece na lista
+
 - Confirme se o objeto foi adicionado ao array `projects`
 - Verifique se não há erros de sintaxe JavaScript
 - Abra o console do navegador para ver possíveis erros
 
 ### Links não funcionam
+
 - Verifique se as URLs estão completas (incluindo `https://`)
 - Teste os links em uma nova aba do navegador
 - Para projetos sem demo, use `liveUrl: null`
