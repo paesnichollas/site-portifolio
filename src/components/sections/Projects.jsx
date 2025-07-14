@@ -14,7 +14,7 @@ const Projects = () => {
       image: NewLife,
       technologies: ["Python", "Django", "HTML", "CSS", "JavaScript"],
       githubUrl: "https://github.com/paesnichollas/new_life_website",
-      liveUrl: null,
+      liveUrl: 'https://new-life-site.onrender.com/',
       featured: true
     },
   ];
