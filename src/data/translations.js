@@ -59,7 +59,7 @@ export const translations = {
       },
       featured: 'Destaque',
       code: 'Código',
-      demo: 'Demo',
+      demo: 'Visitar',
       cta: 'Interessado em ver mais projetos ou discutir uma colaboração?',
       viewAllGithub: 'Ver Todos no GitHub'
     },
@@ -171,7 +171,7 @@ export const translations = {
       },
       featured: 'Featured',
       code: 'Code',
-      demo: 'Demo',
+      demo: 'Visit',
       cta: 'Interested in seeing more projects or discussing a collaboration?',
       viewAllGithub: 'View All on GitHub'
     },
