@@ -13,7 +13,7 @@ const Projects = () => {
       description: t('projects.projectsList.newLifeProject.description'),
       image: NewLife,
       technologies: ["Python", "Django", "HTML", "CSS", "JavaScript"],
-      githubUrl: "https://github.com/paesnichollas/newlifeproject",
+      githubUrl: "https://github.com/paesnichollas/new_life_website",
       liveUrl: null,
       featured: true
     },
@@ -114,7 +114,7 @@ const Projects = () => {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-16">
           <div className="text-center p-6 rounded-lg bg-card border border-border">
             <Code className="mx-auto mb-3 text-primary" size={32} />
-            <h3 className="text-2xl font-bold text-foreground">3+</h3>
+            <h3 className="text-2xl font-bold text-foreground">2</h3>
             <p className="text-muted-foreground">{t('projects.stats.completed')}</p>
           </div>
           <div className="text-center p-6 rounded-lg bg-card border border-border">
