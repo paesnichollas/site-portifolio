@@ -2,7 +2,7 @@
 
 Um site de portfólio profissional moderno e responsivo desenvolvido em React.js, apresentando projetos de desenvolvimento backend e fullstack com foco em Python/Django.
 
-![Portfolio Preview](./docs/preview.png)
+link de acesso: https://site-portifolio-git-main-nichollas-paes-projects.vercel.app
 
 ## ✨ Características
 
