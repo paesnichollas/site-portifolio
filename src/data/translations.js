@@ -54,7 +54,7 @@ export const translations = {
       projectsList: {
         newLifeProject: {
           title: 'Projeto New Life',
-          description: 'Projeto de e-commerce, focado na exposição de produtos naturais e suplementos.'
+          description: 'Projeto de e-commerce, focado na exposição de produtos naturais, suplementos e cosméticos.'
         }
       },
       featured: 'Destaque',
@@ -166,7 +166,7 @@ export const translations = {
       projectsList: {
         newLifeProject: {
           title: 'New Life Project',
-          description: 'E-commerce project focused on showcasing natural products and supplements.'
+          description: 'E-commerce project focused on showcasing natural products, supplements and cosmetics.'
         }
       },
       featured: 'Featured',
